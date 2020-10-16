@@ -17,9 +17,36 @@ public class HomeWork {
         } else {
             System.out.println("NONE");
         }
+        switch (month){
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Zima");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Vesna");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Leto");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Osen");
+                break;
+            default:
+                System.out.println("NONE");
+                break;
+        }
+
 
 
         int array[] = new int[10];
+
         for (int i = 0; i < array.length; i++) {
             array[i] = +i;
         }
@@ -29,6 +56,7 @@ public class HomeWork {
         }
 
         int squareArray[][] = new int[2][3];
+        int number[] = {0,1,2};
         squareArray[0][0] = 1;
         squareArray[0][1] = 2;
         squareArray[0][2] = 3;
@@ -37,30 +65,12 @@ public class HomeWork {
         squareArray[1][2] = 6;
         for (int i = 0; i < squareArray.length; i++) {
             for (int j = 0; j < squareArray[i].length; j++) {
-                System.out.print(squareArray[i][j] + " ");
+                System.out.print(squareArray[i][j] + "["+ number[i]+"]"+ "["+number[j] + "]"+ " ");
             }
             System.out.println();
         }
 
-        //Домашка 2
-        int yearOfBirthday = 1995;
-        int monthOfBirthday = 5;
-        int dayOfBirthday = 29;
-        int sum = yearOfBirthday + monthOfBirthday + dayOfBirthday;
-        boolean monthBiggerDay = monthOfBirthday > dayOfBirthday;
-        System.out.println(sum + " Сумма чисел даты рождения");
-        System.out.println(monthBiggerDay);
-        char name[] = new char[4];
-        name[0] = 'С';
-        name[1] = 'а';
-        name[2] = 'ш';
-        name[3] = 'а';
-        System.out.println(Arrays.toString(name));
 
-        double myAge = 25;
-        double partYear = 4.0 / 12.0;
-        double sumDate = partYear + myAge;
-        System.out.println(sumDate);
 
     }
 }
